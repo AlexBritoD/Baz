@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Baz">
+  <title>Baz</title>
+</head>
+<style>
+  .bottomhead {
+    background-color: white;
+    width: auto;
+    height: 5vh;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%
+  }
+  .logo-head {
+    width: 83vw;
+    display: block;
+    margin: auto;
+  }
+  .d-head {
+    background-color: rgb(6 195 6);
+    width: auto;
+    height: auto;
+  }
+  body {
+    margin: 0;
+    font-family:"Poppins", helvetica, arial, sans-serif;
+  }
+  .dotted-list {
+    list-style: none;
+    counter-reset: item;
+    padding-left: 10px;
+  }
+
+  .dotted-list li {
+      counter-increment: item;
+      margin-bottom: 2px;
+      border-color: #60c03d;
+      border-style: hidden hidden hidden dotted;
+      display: inline-block;
+      padding-left: 20px;
+      position: relative;
+      left: 0px;
+  }
+
+  .dotted-list li:last-child {
+    border-style:  none;
+  }
+
+  .dotted-list li:before {
+      content: counter(item);
+      background: #60c03d;
+      border-radius: 100%;
+      color: white;
+      width: 1.2em;
+      text-align: center;
+      display: inline-block;
+      position: relative;
+      left: -40px;
+      font-size: 2em;
+  }
+
+  .dotted-list .content {
+      display: block;
+      position: relative;
+      top: -50px;
+      margin: 7px;
+  }
+
+
+</style>
+<body>
+  <div class="d-head">
+    <img src="assets/logo-baz.png" alt="" srcset="" class="logo-head">
+    <div class="bottomhead"></div>
+  </div>
+
+  <div style="margin-left: 2em;margin-right: 2em;">
+    <h2 style="color: #60c03d;text-align: center;margin-top: 0;margin-bottom: 0;">Aaron te ha enviado efectivo desde baz</h2>
+    <h2 style="text-align: center;margin-top: 1em;margin-bottom: 0;">¿C&oacute;mo retirar el dinero?</h2> 
+    <div class="list-chain">
+      <ol class="dotted-list">
+        <li>
+            <div class="content">
+                <h2>Selecciona el canal por el que deseas realizar el retiro</h2>
+                <p>(cajero, ventanilla, corresponsal, negocio baz)</p>
+            </div>
+        </li>
+        <li>
+            <div class="content">
+                <h2>Encuentra el punto m&aacute;s cercano</h2>
+            </div>
+        </li>
+        <li>
+            <div class="content">
+                <h2>Muestra el c&oacute;digo generado</h2>
+            </div>
+        </li>
+      </ol>
+      <!--
+      <div class="link" >
+        <div style="display: inline-flex;">
+          <h1 style="background-color: #5abb30;border-radius: 50%;color: #FFFFFF;text-align: center;font-size: 1.8em;width: 70px;float: left;height: 100%;vertical-align: top;margin-right: 0;">1</h1>
+          <h2 style="margin-left: 0.6em;margin-bottom: 0;">Selecciona el canal por el que deseas realizar el retiro 
+            <p style="color: #7F8FA4; font-weight: 400;">(cajero, ventanilla, corresponsal, negocio baz)</p>
+          </h2>
+        </div>
+        <div style="width: 90%;"></div>
+      </div>
+      <div class="link" >
+        <div style="display: inline-flex;">
+          <h1 style="background-color: #5abb30;border-radius: 50%;color: #FFFFFF;text-align: center;font-size: 1.8em;width: 70px;float: left;height: 100%;vertical-align: top;margin-right: 0;">2</h1>
+          <h2 style="margin-left: 0.6em;margin-bottom: 0;">Encuentra el punto m&aacute;s cercano</h2>
+        </div>
+        <div style="width: 90%;"></div>
+      </div>
+      <div class="link" >
+        <div style="display: inline-flex;">
+          <h1 style="background-color: #5abb30;border-radius: 50%;color: #FFFFFF;text-align: center;font-size: 1.8em;width: 70px;float: left;height: 100%;vertical-align: top;margin-right: 0;;">3</h1>
+          <h2 style="margin-left: 0.6em;margin-bottom: 0;">Muestra el c&oacute;digo generado</h2>
+        </div>
+        <div style="width: 90%;"></div>
+      </div> -->
+    </div>
+    <button>Empezar</button>
+  </div>
+  
+</body>
+</html>
